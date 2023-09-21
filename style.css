@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 100%;
+}
+
+i {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+body .hero {
+  background-image: url("./assets/1.png");
+  height: 88rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body .hero header {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: space-around;
+  max-height: 10rem;
+  max-width: 80%;
+  color: white;
+  flex: 0 0 20%;
+}
+body .hero header > div:first-child {
+  flex: 0 0 80%;
+}
+body .hero header p {
+  width: 10%;
+  font-family: Inter;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+body .hero .hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25rem;
+}
+body .hero .hero-text-container .hero-text {
+  color: white;
+  font-size: 80px;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 76px;
+  word-wrap: break-word;
+  text-align: center;
+  flex: 0 1 80%;
+  width: 40%;
+}/*# sourceMappingURL=style.css.map */
