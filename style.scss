@@ -39,14 +39,8 @@ body{
         background-position: center;
         display: flex;
         flex-direction: column;
-        animation-name: example;
-        animation-duration: 1s;
-
-        @keyframes example {
-        from {opacity: 0}
-        to {opacity: 1}
-            }
         header{
+            padding-top:2rem;
             margin-left:10%;
             display: flex;
             align-items: center;
@@ -58,20 +52,33 @@ body{
             flex: 0 0 20%;
             &>div:first-child{
                 flex: 0 0 80%;
+                padding-left:7rem;
             }
             p{
                 width:10%;
                 font-family:Inter;
                 font-size: 1.6rem;
                 text-transform: uppercase;
+                font-weight: bold;
+                padding-left: 4rem;
             }
+        }
+        .hero-toptext{
+            color: white;
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 20px;
+            letter-spacing: 1.60px;
+            word-wrap: break-word;
         }
         .hero-text-container{
             display:flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding-top: 25rem;
+            padding-top: 24rem;
             .hero-text{
                 color: white;
                 font-size: 80px;
@@ -81,7 +88,17 @@ body{
                 word-wrap: break-word;
                 text-align: center;
                 flex: 0 1 80%;
-                width:40%;
+                width:50%;
+            }
+        }
+        .slider-container{
+            display:flex;
+            padding-top:29rem;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                padding-left:1rem;
             }
         }
     }

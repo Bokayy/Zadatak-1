@@ -36,18 +36,9 @@ body .hero {
   background-position: center;
   display: flex;
   flex-direction: column;
-  animation-name: example;
-  animation-duration: 1s;
-}
-@keyframes example {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 body .hero header {
+  padding-top: 2rem;
   margin-left: 10%;
   display: flex;
   align-items: center;
@@ -60,19 +51,32 @@ body .hero header {
 }
 body .hero header > div:first-child {
   flex: 0 0 80%;
+  padding-left: 7rem;
 }
 body .hero header p {
   width: 10%;
   font-family: Inter;
   font-size: 1.6rem;
   text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 4rem;
+}
+body .hero .hero-toptext {
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+  word-wrap: break-word;
 }
 body .hero .hero-text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 25rem;
+  padding-top: 24rem;
 }
 body .hero .hero-text-container .hero-text {
   color: white;
@@ -83,5 +87,14 @@ body .hero .hero-text-container .hero-text {
   word-wrap: break-word;
   text-align: center;
   flex: 0 1 80%;
-  width: 40%;
+  width: 50%;
+}
+body .hero .slider-container {
+  display: flex;
+  padding-top: 29rem;
+  align-items: center;
+  justify-content: center;
+}
+body .hero .slider-container img {
+  padding-left: 1rem;
 }/*# sourceMappingURL=style.css.map */
