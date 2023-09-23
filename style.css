@@ -94,7 +94,7 @@ body .hero .hero-text-container .hero-text {
   word-wrap: break-word;
   text-align: center;
   flex: 0 1 80%;
-  width: 50%;
+  width: 60%;
 }
 body .hero .slider-container {
   display: flex;
@@ -110,6 +110,7 @@ body .section-2 {
   display: flex;
   padding-top: 20rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 body .section-2 .left {
   flex-basis: 50%;
@@ -334,4 +335,78 @@ body .section-4 .offers-container .offer .offer-text .description {
   line-height: 24px;
   word-wrap: break-word;
   padding-bottom: 0.8rem;
+}
+body .section-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 48rem;
+  position: relative;
+}
+body .section-5 .first-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .section-5 .first-text-section > p:first-child {
+  color: #DF6951;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+  word-wrap: break-word;
+}
+body .section-5 .first-text-section > p:nth-child(2) {
+  color: #222222;
+  font-size: 6.4rem;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 68px;
+  word-wrap: break-word;
+  width: 87rem;
+  text-align: center;
+  padding-bottom: 6.4rem;
+}
+body .section-5 > div:nth-child(2) {
+  width: 74rem;
+  height: 27rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 5.4rem;
+  padding-bottom: 6.4rem;
+  background: white;
+  box-shadow: 0px 4px 40px rgba(126, 126, 126, 0.15);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  display: inline-flex;
+}
+body .section-5 > div:nth-child(2) p {
+  width: 610px;
+  text-align: center;
+  color: #222222;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+body .section-5 img {
+  align-self: self-start;
+  position: absolute;
+  padding-top: 41rem;
+}
+body .footer {
+  height: 60rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body .footer img {
+  filter: invert(100%);
 }/*# sourceMappingURL=style.css.map */
