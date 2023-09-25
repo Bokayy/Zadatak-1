@@ -18,7 +18,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: Inter;
 }
 
 html {
@@ -417,7 +417,15 @@ body .footer {
 body .footer img:first-child {
   filter: invert(100%);
 }
-body .footer .search-container p {
+body .footer > div:nth-child(1) > p {
+  color: #222222;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+body .footer > div:nth-child(2) p {
   color: #222222;
   font-size: 2rem;
   font-family: Inter;
@@ -425,10 +433,70 @@ body .footer .search-container p {
   line-height: 2.4rem;
   word-wrap: break-word;
 }
+body .footer > div:nth-child(2) ul {
+  padding-top: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: Inter;
+}
+body .footer > div:nth-child(3) p {
+  color: #222222;
+  font-size: 2rem;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 2rem;
+  word-wrap: break-word;
+}
+body .footer > div:nth-child(3) ul {
+  padding-top: 2.4rem;
+  line-height: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: Inter;
+}
+body .footer .search-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+body .footer .search-container p {
+  color: #222222;
+  font-size: 2rem;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 2.4rem;
+  word-wrap: break-word;
+  padding-bottom: 2.6rem;
+  position: absolute;
+  bottom: 5.4rem;
+}
 body .footer .search-container input {
   width: 31.6rem;
   height: 5.6rem;
   background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+body .footer .search-container input::-moz-placeholder {
+  font-size: 1.6rem;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 2.4rem;
+  word-wrap: break-word;
+  padding-left: 1.6rem;
+}
+body .footer .search-container input::placeholder {
+  font-size: 1.6rem;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 2.4rem;
+  word-wrap: break-word;
+  padding-left: 1.6rem;
 }
 body .footer .search-container .btn {
   color: white;

@@ -20,7 +20,7 @@
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins;
+    font-family: Inter;
 }
 
 html{
@@ -430,7 +430,67 @@ body{
         img:first-child{
             filter: invert(100%);
         }
+        &> div:nth-child(1) > p{
+            // Company
+            // Your Ultimate Travel Partner
+            color: #222222;
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 500;
+            line-height: 24px;
+            word-wrap: break-word
+        }
+
+        &> div:nth-child(2){
+            p{
+            // Company
+            color: #222222;
+            font-size: 2rem;
+            font-family: Inter;
+            font-weight: 700;
+            line-height: 2.4rem;
+            word-wrap: break-word;
+            }
+            ul{
+                padding-top: 2.4rem;
+                line-height:2.4rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                font-family: Inter;
+            }
+        }
+
+
+        &> div:nth-child(3) {
+            p{
+                // Destinations
+                color: #222222;
+                font-size: 2rem;
+                font-family: Inter;
+                font-weight: 700;
+                line-height: 2rem;
+                word-wrap: break-word;
+            }
+
+            ul{
+                padding-top: 2.4rem;
+                line-height:2.4rem;
+                font-size: 1.6rem;
+                font-weight: 500;
+                font-family: Inter;
+            }
+        }
+
+
         .search-container{
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            gap: 1.2rem;
+
             p{
                 // Join our Newsletter
                 color: #222222;
@@ -438,13 +498,28 @@ body{
                 font-family: Inter;
                 font-weight: 700;
                 line-height: 2.4rem;
-                word-wrap: break-word
+                word-wrap: break-word;
+                padding-bottom: 2.6rem;
+
+                position: absolute;
+                bottom: 5.4rem;
             }
+            
             input{
                 width:31.6rem;
                 height: 5.6rem;
-
                 background-color: rgba(256, 256, 256, 0.15);
+                border: 1px solid lightgray;
+                border-radius: 8px;
+
+                &::placeholder{
+                    font-size: 1.6rem;
+                    font-family: Inter;
+                    font-weight: 500;
+                    line-height: 2.4rem;
+                    word-wrap: break-word ;
+                    padding-left: 1.6rem;
+                }
             }
 
             .btn {
