@@ -28,6 +28,14 @@ html{
     background-color: #fafafa;
 }
 
+@media screen and (max-width: 1080px) {
+    /* Styles to apply when the screen width is 1080 pixels or less */
+    html {
+      /* Your CSS styles for the HTML element go here */
+      font-size: 50%; /* For example, you can change the font size */
+    }
+  }
+
 body{
     max-width: 100%;
     display:flex;
@@ -48,6 +56,7 @@ body{
     .hero{
         background-image: url("./assets/1.png");
         height: 88rem;
+        aspect-ratio:16/9;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -78,12 +87,12 @@ body{
         }
         .hero-toptext{
             color: white;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-family: Inter;
             font-weight: 700;
             text-transform: uppercase;
-            line-height: 20px;
-            letter-spacing: 1.60px;
+            line-height: 2rem;
+            letter-spacing: 0.16rem;
             word-wrap: break-word;
         }
         .hero-text-container{
@@ -94,14 +103,14 @@ body{
             padding-top: 24rem;
             .hero-text{
                 color: white;
-                font-size: 80px;
+                font-size: 8rem;
                 font-family: Poppins;
                 font-weight: 700;
-                line-height: 76px;
+                line-height: 7.6rem;
                 word-wrap: break-word;
                 text-align: center;
                 flex: 0 1 80%;
-                width:60%;
+                width:100rem;
             }
         }
         .slider-container{
@@ -358,12 +367,14 @@ body{
         }
     }
     .section-5{
+        //see what our clients say about us
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         height: 48rem;
         position:relative;
+        height: 82.8rem;
         //gap: 6.4rem;
         .first-text-section{
             display: flex;
